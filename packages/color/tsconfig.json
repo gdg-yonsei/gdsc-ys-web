@@ -1,13 +1,13 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": ".",
     "paths": {
-      "@gdsc-ys/color/*": ["src/*"],
-      "@root/*": ["../../*"]
+      "@gdsc-ys-color/*": ["src/*"],
+      "@root/*": ["../../../*"]
     }
   },
-  "include": ["./src", "@types"]
+  "include": ["./src"]
 }

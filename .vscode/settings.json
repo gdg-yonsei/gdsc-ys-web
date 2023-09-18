@@ -6,5 +6,14 @@
   "eslint.nodePath": ".yarn/sdks",
   "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "material-icon-theme.files.associations": {
+    "*.type.ts": "typescript-def",
+    "*.model.ts": "typescript-def",
+    "_ruby-version": "ruby",
+    "_node-version": "nodejs",
+    "config": "settings",
+    "extensions.json": "settings",
+    "settings.json": "settings"
+  }
 }

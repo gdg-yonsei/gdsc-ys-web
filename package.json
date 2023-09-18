@@ -1,6 +1,6 @@
 {
   "name": "gdsc-web",
-  "description": "Monolithic repository config for gdsc-yonsei web/app apps & packages",
+  "description": "Monolithic repository config for gdsc-yonsei web apps & packages",
   "packageManager": "yarn@3.6.3",
   "private": true,
   "workspaces": [
@@ -8,8 +8,8 @@
     "apps/*"
   ],
   "scripts": {
-    "notion": "yarn workspace gdsc-ys-notion",
-    "notion:dev": "yarn workspace gdsc-ys-notion dev"
+    "notion": "yarn workspace @gdsc-ys/notion",
+    "notion:dev": "yarn workspace @gdsc-ys/notion dev"
   },
   "devDependencies": {
     "@types/eslint": "^8.44.2",

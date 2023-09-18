@@ -1,6 +1,7 @@
 {
-  "name": "gdsc-ys-notion",
+  "name": "@gdsc-ys/notion",
   "description": "GDSC Yonsei Notion-like page",
+  "packageManager": "yarn@3.6.1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,11 +17,15 @@
     "eslint": "^8.49.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "styled-components": "^6.0.8",
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/eslint": "^8"
+    "@types/eslint": "^8",
+    "@types/styled-components": "^5.1.27",
+    "eslint-plugin-react": "^7.33.2"
   }
 }
