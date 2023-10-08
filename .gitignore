@@ -1,3 +1,4 @@
+# Yarn configs
 .yarn/*
 !.yarn/cache
 !.yarn/patches
@@ -9,8 +10,8 @@
 node_modules
 __pycache__
 
-# tsconfig build metadata
+# Tsconfig build metadata
 tsconfig.tsbuildinfo
 
-# build file
-dist
+# Build Files
+packages/**/dist/
