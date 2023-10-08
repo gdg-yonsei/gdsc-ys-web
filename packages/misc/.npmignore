@@ -1,0 +1,22 @@
+# Original source files
+project/
+src/
+
+# Node modules & deps
+node_modules/
+
+# System files
+.DS_Store
+
+# Config files
+tsconfig.json
+
+# Documentation files
+docs/
+README.md
+
+# Script files
+scripts/
+script/
+tasks/
+task/

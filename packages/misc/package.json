@@ -9,7 +9,10 @@
     "prettier": "^3.0.3"
   },
   "scripts": {
-    "ready": "yarn build && yarn sortpackage"
+    "ready": "yarn build && yarn sortpackage",
+    "build": "yarn build:clear && yarn build:types",
+    "build:clear": "rm -rf dist",
+    "build:types": "tsc -b && tsc-alias"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
@@ -18,7 +21,8 @@
     "copyfiles": "2.4.1",
     "ts-node": "^10.9.1",
     "tsc-alias": "^1.8.8",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "wonderful-tools": "0.1.1"
   },
   "engines": {
     "node": ">=18.0.0"
