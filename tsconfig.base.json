@@ -4,14 +4,18 @@
     "lib": ["DOM", "ESNext"],
     "module": "es2020",
     "target": "es5",
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": false,
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "removeComments": false,
+    "sourceMap": true,
     "strictNullChecks": true,
     "declaration": true,
     "declarationMap": true,
-    "incremental": true,
     "rootDir": ".",
     "outDir": "./dist"
-  }
+  },
+  "exclude": ["node_modules", "**/node_modules/", "**/dist", "*.config.js"]
 }

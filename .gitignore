@@ -8,3 +8,9 @@
 
 node_modules
 __pycache__
+
+# tsconfig build metadata
+tsconfig.tsbuildinfo
+
+# build file
+dist

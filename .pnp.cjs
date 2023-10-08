@@ -54,6 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:f6c53b2a99c397d6cccd3abf263adcf56fe90825a2e97afa0b49795e7a02a2e5eb66d4b0cf58f3006007350d9784fb27a66696833b88a89ca4371090eb7913c5#npm:8.10.0"],\
             ["eslint-plugin-react", "virtual:f6c53b2a99c397d6cccd3abf263adcf56fe90825a2e97afa0b49795e7a02a2e5eb66d4b0cf58f3006007350d9784fb27a66696833b88a89ca4371090eb7913c5#npm:7.33.2"],\
             ["prettier", "npm:2.8.8"],\
+            ["tsc-alias", "npm:1.8.8"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -2837,7 +2838,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/color", {\
           "packageLocation": "./packages/color/",\
           "packageDependencies": [\
-            ["@gdsc-ys/color", "workspace:packages/color"]\
+            ["@gdsc-ys/color", "workspace:packages/color"],\
+            ["tsc-alias", "npm:1.8.8"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -2854,7 +2856,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:3.0.3"],\
             ["ts-node", "virtual:ea89a7388199c79ce804a22efa44acd71549567c1a89ab39de69108789a0e3d05786e36b50e3ee5a8c25a3a6dab3377d54d6b9a18fd129673110911e83e8c554#npm:10.9.1"],\
             ["tsc-alias", "npm:1.8.8"],\
-            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
+            ["wonderful-tools", "npm:0.1.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -6045,6 +6048,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:f6c53b2a99c397d6cccd3abf263adcf56fe90825a2e97afa0b49795e7a02a2e5eb66d4b0cf58f3006007350d9784fb27a66696833b88a89ca4371090eb7913c5#npm:8.10.0"],\
             ["eslint-plugin-react", "virtual:f6c53b2a99c397d6cccd3abf263adcf56fe90825a2e97afa0b49795e7a02a2e5eb66d4b0cf58f3006007350d9784fb27a66696833b88a89ca4371090eb7913c5#npm:7.33.2"],\
             ["prettier", "npm:2.8.8"],\
+            ["tsc-alias", "npm:1.8.8"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -9560,6 +9564,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["wide-align", "npm:1.1.5"],\
             ["string-width", "npm:4.2.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["wonderful-tools", [\
+        ["npm:0.1.1", {\
+          "packageLocation": "./.yarn/cache/wonderful-tools-npm-0.1.1-9b4e34728b-ae45f57d8a.zip/node_modules/wonderful-tools/",\
+          "packageDependencies": [\
+            ["wonderful-tools", "npm:0.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\

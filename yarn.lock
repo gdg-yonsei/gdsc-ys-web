@@ -1634,6 +1634,8 @@ __metadata:
 "@gdsc-ys/color@workspace:packages/color":
   version: 0.0.0-use.local
   resolution: "@gdsc-ys/color@workspace:packages/color"
+  dependencies:
+    tsc-alias: ^1.8.7
   languageName: unknown
   linkType: soft
 
@@ -1649,6 +1651,7 @@ __metadata:
     ts-node: ^10.9.1
     tsc-alias: ^1.8.8
     typescript: 5.2.2
+    wonderful-tools: 0.1.1
   languageName: unknown
   linkType: soft
 
@@ -4311,6 +4314,7 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     eslint-plugin-react: ^7.31.8
     prettier: ^2.7.1
+    tsc-alias: ^1.8.7
     typescript: 5.2.2
   languageName: unknown
   linkType: soft
@@ -7041,7 +7045,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsc-alias@npm:^1.8.8":
+"tsc-alias@npm:^1.8.7, tsc-alias@npm:^1.8.8":
   version: 1.8.8
   resolution: "tsc-alias@npm:1.8.8"
   dependencies:
@@ -7416,6 +7420,13 @@ __metadata:
   dependencies:
     string-width: ^1.0.2 || 2 || 3 || 4
   checksum: d5fc37cd561f9daee3c80e03b92ed3e84d80dde3365a8767263d03dacfc8fa06b065ffe1df00d8c2a09f731482fcacae745abfbb478d4af36d0a891fad4834d3
+  languageName: node
+  linkType: hard
+
+"wonderful-tools@npm:0.1.1":
+  version: 0.1.1
+  resolution: "wonderful-tools@npm:0.1.1"
+  checksum: ae45f57d8ab501728eb757b776933ff24e7570d3c7d2a038d36e7a658b099bfb66e67e66019bd16a85e1741edcf083fb92799744f821ab14cadc9f4f53c7fedb
   languageName: node
   linkType: hard
 
