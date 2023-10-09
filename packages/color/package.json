@@ -5,10 +5,15 @@
   "main": "dist/index.js",
   "packageManager": "yarn@3.6.3",
   "scripts": {
-    "ready": "yarn build && yarn sortpackage"
+    "ready": "yarn build && yarn sortpackage",
+    "build": "yarn build:clear && yarn build:types",
+    "build:clear": "rm -rf dist",
+    "build:types": "tsc -b && tsc-alias",
+    "sortpackage": "ts-node --project ./scripts/tsconfig.node.json ./scripts/sort-package.ts"
   },
   "devDependencies": {
     "@gdsc-ys/misc": "workspace:^",
+    "@types/node": "^18.0.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "concurrently": "^7.6.0",
