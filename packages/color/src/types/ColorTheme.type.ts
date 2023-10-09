@@ -1,16 +1,26 @@
 /**
  * ### Colortheme enum
  *
- * Enumerate of light, dark color theme
+ * Enumerate of color themes
  */
 export enum ColorTheme {
   /**
-   * ### Light mode
+   * ### Red-centered mode
    */
-  Light = 'light',
+  Red = 'red',
 
   /**
-   * ### Dark mode
+   * ### Green-centered mode
    */
-  Dark = 'dark',
+  Green = 'green',
+
+  /**
+   * ### Blue-centered mode
+   */
+  Blue = 'blue',
+
+  /**
+   * ### Yellow-centered mode
+   */
+  Yellow = 'yellow',
 }
