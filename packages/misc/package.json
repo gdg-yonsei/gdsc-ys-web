@@ -2,17 +2,18 @@
   "name": "@gdsc-ys/misc",
   "description": "Miscellaneous tools for GDSC Yonsei & other chapters",
   "version": "0.0.1",
-  "main": "dist/index.js",
   "packageManager": "yarn@3.6.3",
+  "main": "dist/index.js",
   "license": "UNLICENSED",
-  "dependencies": {
-    "prettier": "^3.0.3"
-  },
   "scripts": {
-    "ready": "yarn build && yarn sortpackage",
     "build": "yarn build:clear && yarn build:types",
     "build:clear": "rm -rf dist",
-    "build:types": "tsc -b && tsc-alias"
+    "build:types": "tsc -b && tsc-alias",
+    "ready": "yarn build && yarn sortpackage",
+    "sortpackage": "ts-node --project ./scripts/tsconfig.node.json ./scripts/sort-package.ts"
+  },
+  "dependencies": {
+    "prettier": "^3.0.3"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

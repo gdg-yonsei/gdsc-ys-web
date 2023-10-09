@@ -2,7 +2,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "lib": ["DOM", "ESNext"],
-    "module": "es2020",
+    "module": "CommonJS",
     "target": "es5",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
