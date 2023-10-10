@@ -1,20 +1,12 @@
 import { Palette } from '@gdsc-ys-color/types';
 
 /**
- * NOTE: For FE 친구들 ^~^
+ * ### blue palette colors
  *
- * opacity를 기준으로 색깔을 구분했으므로, 앞에 'o'를 붙이고 색상을 작성하면 됩니다. (변수는 숫자로 시작해서는 안되므로 그렇습니다.)
- * 예를 들어, blue의 100번 색깔일 경우
- * @example
- * blue: {
- *    o100: '#FAFAFA',
- * }
- * 식으로 작성하면 됩니다.
+ * _This palette color is used internally_
  *
- * 팔레트에서 hexcode를 쓸 때는 대문자로 작성해주세요.
- * #FFFFFf(o) #ffffff (x)
+ * _Consider using 'palette' object instead._
  */
-
 export const blue: Palette = {
   o100: '#ECF3FE',
   o200: '#D9E7FD',
@@ -28,6 +20,13 @@ export const blue: Palette = {
   o1000: '#0D1B31',
 };
 
+/**
+ * ### red palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const red: Palette = {
   o100: '#FDECEB',
   o200: '#FBD9D7',
@@ -41,6 +40,13 @@ export const red: Palette = {
   o1000: '#2F0D0B',
 };
 
+/**
+ * ### yellow palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const yellow: Palette = {
   o100: '#FFF8E6',
   o200: '#FEF2CD',
@@ -54,6 +60,13 @@ export const yellow: Palette = {
   o1000: '#322601',
 };
 
+/**
+ * ### green palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const green: Palette = {
   o100: '#EBF6EE',
   o200: '#D6EEDD',
@@ -67,6 +80,13 @@ export const green: Palette = {
   o1000: '#0A2211',
 };
 
+/**
+ * ### orange palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const orange: Palette = {
   o100: '#FDF2EA',
   o200: '#FCE6D5',
@@ -80,6 +100,13 @@ export const orange: Palette = {
   o1000: '#311B0A',
 };
 
+/**
+ * ### magenta palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const magenta: Palette = {
   o100: '#FDEBF5',
   o200: '#FCD7EC',
@@ -93,6 +120,13 @@ export const magenta: Palette = {
   o1000: '#310C21',
 };
 
+/**
+ * ### purple palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const purple: Palette = {
   o100: '#F3ECFE',
   o200: '#E8D8FD',
@@ -106,6 +140,13 @@ export const purple: Palette = {
   o1000: '#1D0D32',
 };
 
+/**
+ * ### cyan palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const cyan: Palette = {
   o100: '#EAFAFD',
   o200: '#D5F6FC',
@@ -119,6 +160,13 @@ export const cyan: Palette = {
   o1000: '#0A2B31',
 };
 
+/**
+ * ### warmGray palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const warmGray: Palette = {
   o100: '#F0EFEF',
   o200: '#E0DFDE',
@@ -132,6 +180,13 @@ export const warmGray: Palette = {
   o1000: '#151413',
 };
 
+/**
+ * ### coolGray palette colors
+ *
+ * _This palette color is used internally_
+ *
+ * _Consider using 'palette' object instead._
+ */
 export const coolGray: Palette = {
   o100: '#EFEFF0',
   o200: '#DEDFE0',
@@ -145,6 +200,15 @@ export const coolGray: Palette = {
   o1000: '#131415',
 };
 
+/**
+ * ### Palette color
+ *
+ * palette color object.
+ *
+ * Used when palette should be directly accessed regarding of theme.
+ *
+ * **Use Semantic Color or useSemanticColor hooks for accessing colors in general situation**
+ */
 export const palette = {
   blue,
   red,
