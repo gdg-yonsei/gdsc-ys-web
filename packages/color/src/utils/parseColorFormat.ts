@@ -1,5 +1,5 @@
-import { COLOR_REGEX } from '@gdsc-ys-color/constants';
-import { ColorFormat } from '@gdsc-ys-color/types';
+import { COLOR_REGEX } from '../constants';
+import { ColorFormat } from '../types';
 
 /**
  * Checks the color format with regex, and returns the corresponding color format

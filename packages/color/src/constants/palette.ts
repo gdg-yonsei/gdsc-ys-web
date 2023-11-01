@@ -1,11 +1,29 @@
 import { Palette } from '@gdsc-ys-color/types';
 
 /**
+ * ### white palette color
+ *
+ * _This palette color is used internally_
+ *
+ * @deprecated _Consider using 'palette' object instead._
+ */
+export const white = '#FFFFFF';
+
+/**
+ * ### black palette color
+ *
+ * _This palette color is used internally_
+ *
+ * @deprecated _Consider using 'palette' object instead._
+ */
+export const black = '#000000';
+
+/**
  * ### blue palette colors
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const blue: Palette = {
   o100: '#ECF3FE',
@@ -25,7 +43,7 @@ export const blue: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const red: Palette = {
   o100: '#FDECEB',
@@ -45,7 +63,7 @@ export const red: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const yellow: Palette = {
   o100: '#FFF8E6',
@@ -65,7 +83,7 @@ export const yellow: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const green: Palette = {
   o100: '#EBF6EE',
@@ -85,7 +103,7 @@ export const green: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const orange: Palette = {
   o100: '#FDF2EA',
@@ -105,7 +123,7 @@ export const orange: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const magenta: Palette = {
   o100: '#FDEBF5',
@@ -125,7 +143,7 @@ export const magenta: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const purple: Palette = {
   o100: '#F3ECFE',
@@ -145,7 +163,7 @@ export const purple: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const cyan: Palette = {
   o100: '#EAFAFD',
@@ -165,7 +183,7 @@ export const cyan: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const warmGray: Palette = {
   o100: '#F0EFEF',
@@ -185,7 +203,7 @@ export const warmGray: Palette = {
  *
  * _This palette color is used internally_
  *
- * _Consider using 'palette' object instead._
+ * @deprecated _Consider using 'palette' object instead._
  */
 export const coolGray: Palette = {
   o100: '#EFEFF0',
@@ -210,6 +228,8 @@ export const coolGray: Palette = {
  * **Use Semantic Color or useSemanticColor hooks for accessing colors in general situation**
  */
 export const palette = {
+  white,
+  black,
   blue,
   red,
   yellow,

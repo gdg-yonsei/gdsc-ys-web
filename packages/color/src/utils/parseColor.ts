@@ -1,4 +1,4 @@
-import { ColorFormat, RGBA } from '@gdsc-ys-color/types';
+import { ColorFormat, RGBA } from '../types';
 import { parseColorFormat } from './parseColorFormat';
 import { clamp } from './clamp';
 

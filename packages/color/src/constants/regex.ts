@@ -1,4 +1,4 @@
-import { ColorFormat } from '@gdsc-ys-color/types';
+import { ColorFormat } from '../types';
 
 /**
  * ### Color format regex object
