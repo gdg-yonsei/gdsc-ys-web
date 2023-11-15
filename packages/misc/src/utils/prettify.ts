@@ -1,7 +1,5 @@
-import prettier from 'prettier';
-
 import { PRETTIER_OPTIONS } from '@gdsc-ys-misc/constants';
-
+import prettier from 'prettier';
 import type { Options as PrettierOption } from 'prettier';
 
 /**
