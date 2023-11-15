@@ -1039,15 +1039,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.18.5"],\
             ["@types/react", "npm:18.2.28"],\
             ["@types/react-dom", "npm:18.2.13"],\
+            ["@types/styled-components", null],\
             ["concurrently", "npm:7.6.0"],\
             ["react", "npm:18.2.0"],\
+            ["styled-components", "virtual:1c43cf4cf86d5062ec737c891173b2d9836dc169c18f8350c21f9287d3a2f0bf9edb03f26e5103f3a032e9009d70d46dc8cd6f8900a9c6ff6fb4f2d98c1a6b20#npm:6.1.0"],\
             ["ts-node", "virtual:ea89a7388199c79ce804a22efa44acd71549567c1a89ab39de69108789a0e3d05786e36b50e3ee5a8c25a3a6dab3377d54d6b9a18fd129673110911e83e8c554#npm:10.9.1"],\
             ["tsc-alias", "npm:1.8.8"],\
-            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
+            ["wonderful-tools", "npm:0.2.1"]\
           ],\
           "packagePeers": [\
             "@types/react",\
-            "react"\
+            "@types/styled-components",\
+            "react",\
+            "styled-components"\
           ],\
           "linkType": "SOFT"\
         }],\
@@ -1060,9 +1065,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.2.28"],\
             ["@types/react-dom", "npm:18.2.13"],\
             ["concurrently", "npm:7.6.0"],\
+            ["react", "npm:18.2.0"],\
+            ["styled-components", "virtual:f078b7bbd75609257037f344ce0bf7fbe9478916d27fddf61b2f74d2218dee9c67d29e9f9af5dfffe5bbc7c8dadd4662efe0f7a82a9b0cb782d2c9994f0f6edf#npm:6.1.1"],\
             ["ts-node", "virtual:ea89a7388199c79ce804a22efa44acd71549567c1a89ab39de69108789a0e3d05786e36b50e3ee5a8c25a3a6dab3377d54d6b9a18fd129673110911e83e8c554#npm:10.9.1"],\
             ["tsc-alias", "npm:1.8.8"],\
-            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
+            ["wonderful-tools", "npm:0.2.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -11707,6 +11715,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
+        ["npm:6.1.1", {\
+          "packageLocation": "./.yarn/cache/styled-components-npm-6.1.1-10768abb38-d062ba4730.zip/node_modules/styled-components/",\
+          "packageDependencies": [\
+            ["styled-components", "npm:6.1.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["virtual:1c43cf4cf86d5062ec737c891173b2d9836dc169c18f8350c21f9287d3a2f0bf9edb03f26e5103f3a032e9009d70d46dc8cd6f8900a9c6ff6fb4f2d98c1a6b20#npm:6.1.0", {\
           "packageLocation": "./.yarn/__virtual__/styled-components-virtual-711f42a692/0/cache/styled-components-npm-6.1.0-309a24863e-989262a2be.zip/node_modules/styled-components/",\
           "packageDependencies": [\
@@ -11747,6 +11762,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.31"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:41fc30c30018c929adb50c6ee38e8878853d85d079b4eb537d8e935bb4c7b2d4d372ced97655a0019f480fec17da86c7ea64ac0e5fac42d065fd6ee0fcd55a70#npm:18.2.0"],\
+            ["shallowequal", "npm:1.1.0"],\
+            ["stylis", "npm:4.3.0"],\
+            ["tslib", "npm:2.6.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:f078b7bbd75609257037f344ce0bf7fbe9478916d27fddf61b2f74d2218dee9c67d29e9f9af5dfffe5bbc7c8dadd4662efe0f7a82a9b0cb782d2c9994f0f6edf#npm:6.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/styled-components-virtual-9719d67f5a/0/cache/styled-components-npm-6.1.1-10768abb38-d062ba4730.zip/node_modules/styled-components/",\
+          "packageDependencies": [\
+            ["styled-components", "virtual:f078b7bbd75609257037f344ce0bf7fbe9478916d27fddf61b2f74d2218dee9c67d29e9f9af5dfffe5bbc7c8dadd4662efe0f7a82a9b0cb782d2c9994f0f6edf#npm:6.1.1"],\
+            ["@emotion/is-prop-valid", "npm:1.2.1"],\
+            ["@emotion/unitless", "npm:0.8.1"],\
+            ["@types/react", "npm:18.2.28"],\
+            ["@types/react-dom", "npm:18.2.13"],\
+            ["@types/stylis", "npm:4.2.1"],\
+            ["css-to-react-native", "npm:3.2.0"],\
+            ["csstype", "npm:3.1.2"],\
+            ["postcss", "npm:8.4.31"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", null],\
             ["shallowequal", "npm:1.1.0"],\
             ["stylis", "npm:4.3.0"],\
             ["tslib", "npm:2.6.2"]\
@@ -12873,6 +12914,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/wonderful-tools-npm-0.1.1-9b4e34728b-ae45f57d8a.zip/node_modules/wonderful-tools/",\
           "packageDependencies": [\
             ["wonderful-tools", "npm:0.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.2.1", {\
+          "packageLocation": "./.yarn/cache/wonderful-tools-npm-0.2.1-dbb1848d75-200348388f.zip/node_modules/wonderful-tools/",\
+          "packageDependencies": [\
+            ["wonderful-tools", "npm:0.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
