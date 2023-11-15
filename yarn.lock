@@ -772,14 +772,18 @@ __metadata:
   dependencies:
     "@gdsc-ys/misc": "workspace:^"
     "@types/node": ^18.0.0
-    "@types/react": ^18.2.21
+    "@types/react": ^18.2.15
     "@types/react-dom": ^18.2.7
     concurrently: ^7.6.0
+    react: ^18.2.0
+    styled-components: ^6.1.1
     ts-node: ^10.9.1
     tsc-alias: ^1.8.7
     typescript: 5.2.2
+    wonderful-tools: 0.2.1
   peerDependencies:
-    react: 18.2.*
+    react: "*"
+    styled-components: "*"
   languageName: unknown
   linkType: soft
 
@@ -9773,6 +9777,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"styled-components@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "styled-components@npm:6.1.1"
+  dependencies:
+    "@emotion/is-prop-valid": ^1.2.1
+    "@emotion/unitless": ^0.8.0
+    "@types/stylis": ^4.0.2
+    css-to-react-native: ^3.2.0
+    csstype: ^3.1.2
+    postcss: ^8.4.31
+    shallowequal: ^1.1.0
+    stylis: ^4.3.0
+    tslib: ^2.5.0
+  peerDependencies:
+    react: ">= 16.8.0"
+    react-dom: ">= 16.8.0"
+  checksum: d062ba473014a551ed76f4876feaccebc06aaa8dc2849c9d72f67420701dbc7d7c9af1dfa5207b2ad5df9b2e122ddf9e5fe6b6b69ba4d93c4c702abdff19435a
+  languageName: node
+  linkType: hard
+
 "styled-jsx@npm:5.1.1":
   version: 5.1.1
   resolution: "styled-jsx@npm:5.1.1"
@@ -10682,6 +10706,13 @@ __metadata:
   version: 0.1.1
   resolution: "wonderful-tools@npm:0.1.1"
   checksum: ae45f57d8ab501728eb757b776933ff24e7570d3c7d2a038d36e7a658b099bfb66e67e66019bd16a85e1741edcf083fb92799744f821ab14cadc9f4f53c7fedb
+  languageName: node
+  linkType: hard
+
+"wonderful-tools@npm:0.2.1":
+  version: 0.2.1
+  resolution: "wonderful-tools@npm:0.2.1"
+  checksum: 200348388f8594fa0bc2353b9fbb71a66b5767c99635e4f35602ab9cd21a1a894649755623f48b7b7e1018147a708ff09550ce2cc1cf2c9061dd9242831f5153
   languageName: node
   linkType: hard
 

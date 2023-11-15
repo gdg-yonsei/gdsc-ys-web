@@ -8,6 +8,7 @@
     "apps/*"
   ],
   "scripts": {
+    "ready": "yarn misc ready && yarn color ready",
     "notion": "yarn workspace @gdsc-ys/notion",
     "notion:dev": "yarn workspace @gdsc-ys/notion dev",
     "color": "yarn workspace @gdsc-ys/color",
