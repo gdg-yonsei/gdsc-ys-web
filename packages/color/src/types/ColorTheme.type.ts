@@ -1,26 +1,28 @@
 /**
- * ### Colortheme enum
+ * ### Color theme enum
  *
  * Enumerate of color themes
  */
-export enum ColorTheme {
+export const ColorTheme = {
   /**
    * ### Red-centered mode
    */
-  Red = 'red',
+  Red: 'red',
 
   /**
    * ### Green-centered mode
    */
-  Green = 'green',
+  Green: 'green',
 
   /**
    * ### Blue-centered mode
    */
-  Blue = 'blue',
+  Blue: 'blue',
 
   /**
    * ### Yellow-centered mode
    */
-  Yellow = 'yellow',
+  Yellow: 'yellow',
 }
+
+export type ColorTheme = (typeof ColorTheme)[keyof typeof ColorTheme];

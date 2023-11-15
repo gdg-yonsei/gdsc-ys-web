@@ -1,6 +1,6 @@
 import { clamp } from './clamp';
-import { parseColor } from './parseColor';
 import { hexcode } from './hexcode';
+import { parseColor } from './parseColor';
 
 /**
  * Converts color string to '#RRGGBBAA' color format
