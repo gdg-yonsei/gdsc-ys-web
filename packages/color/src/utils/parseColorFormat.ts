@@ -1,4 +1,4 @@
-import { COLOR_REGEX } from '../constants';
+import { COLOR_REGEX } from '../constants/regex';
 import { ColorFormat } from '../types';
 
 /**
@@ -10,21 +10,19 @@ import { ColorFormat } from '../types';
  * @author whatisyourname0
  */
 export function parseColorFormat(targetColor: string): ColorFormat {
-  const parsedTargetColor = targetColor.replaceAll(' ', '').toLowerCase();
+  const colorCode = targetColor.replaceAll(' ', '').toLowerCase();
 
-  const findFormat = Object.entries(COLOR_REGEX).find(([, formatRegex]) => formatRegex[1].test(parsedTargetColor));
+  const findFormat = (format: ColorFormat) => COLOR_REGEX[format].test(colorCode) && format;
 
-  if (!findFormat) {
-    throw new Error(`[@gdsc-ys/color] - parseColorFormat: Undefined Color format - {${targetColor}}`);
-  }
-
-  /**
-   * HACK: Wrong type(string) is given because of Object.entries typescript implementation
-   *
-   * Assert type to ColorFormat
-   *
-   * For more info:
-   * https://stackoverflow.com/questions/55012174/why-doesnt-object-keys-return-a-keyof-type-in-typescript/55012175#55012175
-   */
-  return findFormat[0] as ColorFormat;
+  return (
+    findFormat(ColorFormat.RGB) ||
+    findFormat(ColorFormat.RGBA) ||
+    findFormat(ColorFormat.RRGGBB) ||
+    findFormat(ColorFormat.RRGGBBAA) ||
+    findFormat(ColorFormat.rgb) ||
+    findFormat(ColorFormat.rgba) ||
+    (() => {
+      throw new Error(`[@gdsc-ys/color] - parseColorFormat: Undefined Color format - {${targetColor}}`);
+    })()
+  );
 }

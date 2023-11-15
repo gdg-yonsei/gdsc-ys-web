@@ -1,4 +1,5 @@
 import { RGBA } from '@gdsc-ys-color/types';
+
 import { clamp } from './clamp';
 
 /**

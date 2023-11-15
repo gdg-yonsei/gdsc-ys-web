@@ -1,6 +1,6 @@
-import { ColorFormat, RGBA } from '../types';
-import { parseColorFormat } from './parseColorFormat';
 import { clamp } from './clamp';
+import { parseColorFormat } from './parseColorFormat';
+import { ColorFormat, RGBA } from '../types';
 
 /**
  * Converts given color to RGBA color data type
