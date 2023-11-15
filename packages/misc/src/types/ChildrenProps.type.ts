@@ -7,4 +7,4 @@ import type { PropsWithChildren } from 'react';
  *
  * @abstract
  */
-export interface ChildrenProp extends PropsWithChildren<{}> {}
+export interface ChildrenProp extends PropsWithChildren<object> {}
