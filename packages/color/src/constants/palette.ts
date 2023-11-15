@@ -36,7 +36,7 @@ export const blue: Palette = {
   o800: '#285092',
   o900: '#1A3562',
   o1000: '#0D1B31',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### red palette colors
@@ -56,7 +56,7 @@ export const red: Palette = {
   o800: '#8C2820',
   o900: '#5E1B15',
   o1000: '#2F0D0B',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### yellow palette colors
@@ -76,7 +76,7 @@ export const yellow: Palette = {
   o800: '#97740A',
   o900: '#644B02',
   o1000: '#322601',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### green palette colors
@@ -96,7 +96,7 @@ export const green: Palette = {
   o800: '#1F6532',
   o900: '#154321',
   o1000: '#0A2211',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### orange palette colors
@@ -116,7 +116,7 @@ export const orange: Palette = {
   o800: '#914F1E',
   o900: '#603414',
   o1000: '#311B0A',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### magenta palette colors
@@ -136,7 +136,7 @@ export const magenta: Palette = {
   o800: '#912461',
   o900: '#601840',
   o1000: '#310C21',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### purple palette colors
@@ -156,7 +156,7 @@ export const purple: Palette = {
   o800: '#552893',
   o900: '#381A62',
   o1000: '#1D0D32',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### cyan palette colors
@@ -176,7 +176,7 @@ export const cyan: Palette = {
   o800: '#1E7F91',
   o900: '#145460',
   o1000: '#0A2B31',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### warmGray palette colors
@@ -196,7 +196,7 @@ export const warmGray: Palette = {
   o800: '#3F3B39',
   o900: '#2A2726',
   o1000: '#151413',
-};
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### coolGray palette colors
@@ -216,7 +216,27 @@ export const coolGray: Palette = {
   o800: '#393C3F',
   o900: '#26282A',
   o1000: '#131415',
-};
+} satisfies Record<string, `#${string}`>;
+
+/**
+ * ### gray palette colors
+ *
+ * _This palette color is used internally_
+ * 
+ * @deprecated _Consider using 'palette' object instead._
+ */
+export const gray: Palette = {
+  o100: '#FFFFFF',
+  o200: '#EEEEEE',
+  o300: '#CCCCCC',
+  o400: '#AAAAAA',
+  o500: '#929292',
+  o600: '#828282',
+  o700: '#666666',
+  o800: '#444444',
+  o900: '#222222',
+  o1000: '#000000',
+} satisfies Record<string, `#${string}`>;
 
 /**
  * ### Palette color
@@ -238,6 +258,7 @@ export const palette = {
   magenta,
   purple,
   cyan,
+  gray,
   warmGray,
   coolGray,
 };
