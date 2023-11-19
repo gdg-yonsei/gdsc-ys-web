@@ -784,7 +784,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@gdsc-yonsei/color@workspace:packages/color"
   dependencies:
-    "@gdsc-yonsei/misc": ^0.0.16
+    "@gdsc-yonsei/misc": "workspace:^"
     "@types/node": ^18.0.0
     "@types/react": ^18.2.15
     "@types/react-dom": ^18.2.7
@@ -801,7 +801,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gdsc-yonsei/misc@^0.0.16, @gdsc-yonsei/misc@workspace:^, @gdsc-yonsei/misc@workspace:packages/misc":
+"@gdsc-yonsei/misc@workspace:^, @gdsc-yonsei/misc@workspace:packages/misc":
   version: 0.0.0-use.local
   resolution: "@gdsc-yonsei/misc@workspace:packages/misc"
   dependencies:

@@ -23,7 +23,7 @@
     "wonderful-tools": "0.2.1"
   },
   "devDependencies": {
-    "@gdsc-yonsei/misc": "^0.0.19",
+    "@gdsc-yonsei/misc": "workspace:^",
     "@types/node": "^18.0.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
