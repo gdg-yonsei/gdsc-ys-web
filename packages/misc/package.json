@@ -1,7 +1,7 @@
 {
   "name": "@gdsc-ys/misc",
   "description": "Miscellaneous tools for GDSC Yonsei & other chapters",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "packageManager": "yarn@3.6.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,5 +29,5 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "gitHead": "de0d7a9cdeab5a19f8ed94fae22c263496ba5b2f"
+  "gitHead": "ecd1c1106f8cc08377538801edd02be7205404b6"
 }
