@@ -1,7 +1,7 @@
 {
   "name": "@gdsc-ys/color",
   "description": "Color system for GDSC Yonsei & other chapters",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "packageManager": "yarn@3.6.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,7 @@
     "wonderful-tools": "0.2.1"
   },
   "devDependencies": {
-    "@gdsc-ys/misc": "^0.0.14",
+    "@gdsc-ys/misc": "^0.0.15",
     "@types/node": "^18.0.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
