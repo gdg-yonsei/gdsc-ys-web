@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs";
 import path from "path";
 
-import { prettify, injectComment } from "@gdsc-ys/misc";
+import { prettify, injectComment } from "@gdsc-yonsei/misc";
 import tools, { type RecursiveObject } from 'wonderful-tools';
 
 
@@ -28,7 +28,7 @@ type ColorPresetGroup = { [key in ColorPresetName ]: ColorPreset};
 type SingleColorPreset = Exclude<RecursiveObject<string>, string>;
 
 /**
- * loads color palette from @gdsc-ys/color palette,
+ * loads color palette from @gdsc-yonsei/color palette,
  * and generate/inject CSS to root
  */
 async function main() {

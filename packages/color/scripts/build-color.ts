@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs";
 import path from "path";
 
-import { prettify, injectComment } from "@gdsc-ys/misc";
+import { prettify, injectComment } from "@gdsc-yonsei/misc";
 import tools, { type RecursiveObject } from 'wonderful-tools';
 
 

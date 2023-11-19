@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 
-import { color } from "@gdsc-ys-color/styles";
-import { ColorTheme } from "@gdsc-ys-color/types";
-import type { SemanticColors } from "@gdsc-ys-color/types"
+import { color } from "@gdsc-yonsei-color/styles";
+import { ColorTheme } from "@gdsc-yonsei-color/types";
+import type { SemanticColors } from "@gdsc-yonsei-color/types"
 
 import { useTheme } from "../useTheme";
 

@@ -1,4 +1,4 @@
-import { PACKAGE_JSON_ORDERING } from '@gdsc-ys-misc/constants';
+import { PACKAGE_JSON_ORDERING } from '@gdsc-yonsei-misc/constants';
 
 import type { PackageJson } from 'wonderful-tools';
 

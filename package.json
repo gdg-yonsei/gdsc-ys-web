@@ -2,19 +2,19 @@
   "name": "gdsc-web",
   "description": "Monolithic repository config for gdsc-yonsei web apps & packages",
   "packageManager": "yarn@3.6.3",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
   "scripts": {
     "ready": "yarn misc ready && yarn color ready",
-    "notion": "yarn workspace @gdsc-ys/notion",
-    "notion:dev": "yarn workspace @gdsc-ys/notion dev",
-    "color": "yarn workspace @gdsc-ys/color",
-    "color-playground": "yarn workspace @gdsc-ys/color-playground",
-    "play": "yarn workspace @gdsc-ys/color-playground dev",
-    "misc": "yarn workspace @gdsc-ys/misc"
+    "notion": "yarn workspace @gdsc-yonsei/notion",
+    "notion:dev": "yarn workspace @gdsc-yonsei/notion dev",
+    "color": "yarn workspace @gdsc-yonsei/color",
+    "color-playground": "yarn workspace @gdsc-yonsei/color-playground",
+    "play": "yarn workspace @gdsc-yonsei/color-playground dev",
+    "misc": "yarn workspace @gdsc-yonsei/misc"
   },
   "devDependencies": {
     "@lerna-lite/cli": "^2.5.1",

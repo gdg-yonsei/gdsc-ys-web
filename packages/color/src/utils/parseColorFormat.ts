@@ -22,7 +22,7 @@ export function parseColorFormat(targetColor: string): ColorFormat {
     findFormat(ColorFormat.rgb) ||
     findFormat(ColorFormat.rgba) ||
     (() => {
-      throw new Error(`[@gdsc-ys/color] - parseColorFormat: Undefined Color format - {${targetColor}}`);
+      throw new Error(`[@gdsc-yonsei/color] - parseColorFormat: Undefined Color format - {${targetColor}}`);
     })()
   );
 }

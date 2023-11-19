@@ -1,5 +1,5 @@
-import type { ChildrenProp } from '@gdsc-ys/misc';
-import { ColorTheme } from '@gdsc-ys-color/types';
+import type { ChildrenProp } from '@gdsc-yonsei/misc';
+import { ColorTheme } from '@gdsc-yonsei-color/types';
 
 /**
  * ### ColorThemeProvider props

@@ -1,7 +1,7 @@
 {
-  "name": "@gdsc-ys/misc",
+  "name": "@gdsc-yonsei/misc",
   "description": "Miscellaneous tools for GDSC Yonsei & other chapters",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "packageManager": "yarn@3.6.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

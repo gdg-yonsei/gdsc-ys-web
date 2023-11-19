@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-const { packageJson } = require('@gdsc-ys/misc');
+const { packageJson } = require('@gdsc-yonsei/misc');
 
 /**
  * ### sortPackage function

@@ -6,11 +6,11 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 // https://vitejs.dev/config/
 export default defineConfig({
   optimizeDeps: {
-    include: ['@gdsc-ys/color'],
+    include: ['@gdsc-yonsei/color'],
   },
   build: {
     commonjsOptions: {
-      include: ['@gdsc-ys/color'],
+      include: ['@gdsc-yonsei/color'],
     },
   },
   plugins: [

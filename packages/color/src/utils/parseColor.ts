@@ -49,7 +49,7 @@ export function parseColor(color: string): RGBA {
     case ColorFormat.rgb:
       const [r, g, b] = formattedColor.substring(4, formattedColor.length - 1).split(',');
       if (!r || !g || !b) {
-        throw new Error(`@gdsc-ys/color] - parseColor: r, g, b value not found! {${formattedColor}}`);
+        throw new Error(`@gdsc-yonsei/color] - parseColor: r, g, b value not found! {${formattedColor}}`);
       }
 
       return new RGBA(clamp(0, parseInt(r), 255), clamp(0, parseInt(g), 255), clamp(0, parseInt(b), 255), 1);
@@ -57,7 +57,7 @@ export function parseColor(color: string): RGBA {
     case ColorFormat.rgba:
       const [rr, gg, bb, aa] = formattedColor.substring(4, formattedColor.length - 1).split(',');
       if (!rr || !gg || !bb || !aa) {
-        throw new Error(`@gdsc-ys/color] - parseColor: r, g, b, a value not found! {${formattedColor}}`);
+        throw new Error(`@gdsc-yonsei/color] - parseColor: r, g, b, a value not found! {${formattedColor}}`);
       }
 
       return new RGBA(
@@ -68,6 +68,6 @@ export function parseColor(color: string): RGBA {
       );
 
     default:
-      throw new Error(`@gdsc-ys/color] - parseColor: undefined color format`);
+      throw new Error(`@gdsc-yonsei/color] - parseColor: undefined color format`);
   }
 }

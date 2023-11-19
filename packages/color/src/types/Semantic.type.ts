@@ -1,4 +1,4 @@
-import { color } from '@gdsc-ys-color/styles';
+import { color } from '@gdsc-yonsei-color/styles';
 
 import type { ColorTheme } from './ColorTheme.type';
 

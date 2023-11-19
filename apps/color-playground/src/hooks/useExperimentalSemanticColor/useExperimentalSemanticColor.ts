@@ -1,4 +1,4 @@
-import { palette } from '@gdsc-ys/color';
+import { palette } from '@gdsc-yonsei/color';
 
 const useExperimentalSemanticColor = () => {
   const background = {

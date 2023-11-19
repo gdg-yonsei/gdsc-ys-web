@@ -1,4 +1,4 @@
-import { Palette } from '@gdsc-ys-color/types';
+import { Palette } from '@gdsc-yonsei-color/types';
 
 /**
  * ### white palette color

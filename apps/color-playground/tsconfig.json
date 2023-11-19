@@ -22,8 +22,8 @@
 
     "paths": {
       "@/*": ["./src/*"],
-      "@gdsc-ys/color": ["../../packages/color/src"],
-      "@gdsc-ys/misc": ["../../packages/misc/src"]
+      "@gdsc-yonsei/color": ["../../packages/color/src"],
+      "@gdsc-yonsei/misc": ["../../packages/misc/src"]
     }
   },
   "include": ["src"],

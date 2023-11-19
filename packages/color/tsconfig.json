@@ -5,7 +5,7 @@
     "rootDir": "./src",
     "baseUrl": ".",
     "paths": {
-      "@gdsc-ys-color/*": ["src/*"],
+      "@gdsc-yonsei-color/*": ["src/*"],
       "@root/*": ["../../../*"]
     }
   },

@@ -1,4 +1,4 @@
-# @gdsc-ys/color package
+# @gdsc-yonsei/color package
 
 Semantic color system package for GDSC Yonsei chapter system.
 
@@ -12,10 +12,10 @@ This package can be installed by using package manager.
 
 ```zsh
 # yarn (most recommmended)
-yarn add @gdsc-ys/color
+yarn add @gdsc-yonsei/color
 
 # npm
-npm install --save @gdsc-ys/color
+npm install --save @gdsc-yonsei/color
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ npm install --save @gdsc-ys/color
 ### 1. Semantic Colors 🎨
 
 ```tsx
-import { content, background } from '@gdsc-ys/color';
+import { content, background } from '@gdsc-yonsei/color';
 
 const ExampleComponent = () => {
    return (
@@ -47,7 +47,7 @@ If you wish to access color tokens by css variables, predefined css global varia
 > 🚨 **Direct usage of color tokens is not recommended** as each color tokens are automatically set by context. Import it when original color token string is required in particual situations.
 
 ```tsx
-import { useSemanticColor, ColorTheme } from '@gdsc-ys/color';
+import { useSemanticColor, ColorTheme } from '@gdsc-yonsei/color';
 
 const ExampleComponent = () => {
    // get background color token object according to theme defined in <GlobalStylesProvider />
@@ -123,7 +123,7 @@ Predefined theme can be set by importing 'ColorTheme' enum. ColorTheme enum has 
 Details of each color theme can be found in Figma page. 
 
 ```tsx
-import { GlobalStylesProvider } from '@gdsc-ys/color';
+import { GlobalStylesProvider } from '@gdsc-yonsei/color';
 
 const MyGorgeousApp = () => {
    // if not given, default theme is set as blue(ColorTheme.Blue).
@@ -136,7 +136,7 @@ const MyGorgeousApp = () => {
 ```
 
 ```tsx
-import { GlobalStylesProvider, ColorTheme } from '@gdsc-ys/color';
+import { GlobalStylesProvider, ColorTheme } from '@gdsc-yonsei/color';
 
 const MyGorgeousGreenApp = () => {
    // Red theme is set!
@@ -170,7 +170,7 @@ declare function getRgba(string, number): string;
 
 ## Build & Publish 🛠️
 
-@gdsc-ys/color and gdsc-ys-web monorepo uses _yarn berry_ as a package manager.
+@gdsc-yonsei/color and gdsc-ys-web monorepo uses _yarn berry_ as a package manager.
 
 Before build, make sure all dependencies are ready by installing all packages.
 
