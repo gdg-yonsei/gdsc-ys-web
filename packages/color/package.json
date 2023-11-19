@@ -38,9 +38,11 @@
     "react": "*",
     "styled-components": "*"
   },
+  "gitHead": "2cfc46f3342a9493f6e90efa4ac533ffe1bfe850",
   "publicConfig": {
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "access": "public"
   },
-  "type": "commonjs",
-  "gitHead": "2cfc46f3342a9493f6e90efa4ac533ffe1bfe850"
+  "type": "commonjs"
 }

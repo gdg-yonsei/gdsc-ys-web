@@ -26,11 +26,13 @@
     "typescript": "5.2.2",
     "wonderful-tools": "0.1.1"
   },
+  "gitHead": "2cfc46f3342a9493f6e90efa4ac533ffe1bfe850",
   "engines": {
     "node": ">=18.0.0"
   },
   "publicConfig": {
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "access": "public"
-  },
-  "gitHead": "2cfc46f3342a9493f6e90efa4ac533ffe1bfe850"
+  }
 }
