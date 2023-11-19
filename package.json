@@ -2,6 +2,7 @@
   "name": "gdsc-web",
   "description": "Monolithic repository config for gdsc-yonsei web apps & packages",
   "packageManager": "yarn@3.6.3",
+  "version": "0.0.14",
   "workspaces": [
     "packages/*",
     "apps/*"
