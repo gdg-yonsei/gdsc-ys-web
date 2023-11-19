@@ -770,7 +770,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@gdsc-ys/color@workspace:packages/color"
   dependencies:
-    "@gdsc-ys/misc": ^0.0.6
+    "@gdsc-ys/misc": ^0.0.12
     "@types/node": ^18.0.0
     "@types/react": ^18.2.15
     "@types/react-dom": ^18.2.7
@@ -787,7 +787,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gdsc-ys/misc@^0.0.6, @gdsc-ys/misc@workspace:^, @gdsc-ys/misc@workspace:packages/misc":
+"@gdsc-ys/misc@^0.0.12, @gdsc-ys/misc@workspace:^, @gdsc-ys/misc@workspace:packages/misc":
   version: 0.0.0-use.local
   resolution: "@gdsc-ys/misc@workspace:packages/misc"
   dependencies:

@@ -29,5 +29,8 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "gitHead": "0dda8c02fc892f7df08b4a19c2a3f9411810ca7f"
+  "publicConfig": {
+    "access": "public"
+  },
+  "gitHead": "fb3f745150b67c362961b27fb8d735b990380421"
 }
