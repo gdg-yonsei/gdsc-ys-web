@@ -3,10 +3,7 @@ import styled from "styled-components";
 import { useExperimentalSemanticColor } from "../../hooks";
 
 function TopAppBar() {
-  const { background } = useExperimentalSemanticColor();
-
-  console.log(background);
-
+  
   return (
     <Container>
       <LeftContainer>

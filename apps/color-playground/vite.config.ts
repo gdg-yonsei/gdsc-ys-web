@@ -7,6 +7,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   optimizeDeps: {
     include: ['@gdsc-ys/color'],
+    force: true,
   },
   build: {
     commonjsOptions: {
@@ -19,7 +20,7 @@ export default defineConfig({
       root: '.',
     }),
     svgr({
-      exportAsDefault: true,
+      include: '**/*.svg',
     }),
   ],
 });
