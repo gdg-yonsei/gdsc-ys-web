@@ -1,7 +1,7 @@
 {
   "name": "@gdsc-yonsei/color",
   "description": "Color system for GDSC Yonsei & other chapters",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "packageManager": "yarn@4.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
