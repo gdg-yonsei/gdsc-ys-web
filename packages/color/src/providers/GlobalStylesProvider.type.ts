@@ -1,4 +1,3 @@
-import type { ChildrenProp } from '@gdsc-yonsei/misc';
 import type { ColorTheme } from '@gdsc-yonsei-color/types';
 
 /**
@@ -6,11 +5,18 @@ import type { ColorTheme } from '@gdsc-yonsei-color/types';
  *
  * Props for global GlobalStylesProvider node
  */
-export interface GlobalStylesProviderProps extends ChildrenProp {
+export interface GlobalStylesProviderProps {
   /**
    * ### Main theme configuration
    *
    * This prop should be enum member of ColorTheme preset
    */
   theme: ColorTheme;
+
+  /**
+   * ### Children node
+   *
+   * Children node of ColoThemeProvider
+   */
+  children: React.ReactElement;
 }

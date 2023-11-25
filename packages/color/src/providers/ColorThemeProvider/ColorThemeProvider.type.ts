@@ -1,18 +1,24 @@
-import type { ChildrenProp } from '@gdsc-yonsei/misc';
 import { ColorTheme } from '@gdsc-yonsei-color/types';
 
 /**
  * ### ColorThemeProvider props
  */
-export interface ColorThemeProviderProps extends ChildrenProp {
+export interface ColorThemeProviderProps {
   /**
    * ### Theme config
-   * 
+   *
    * Configure the overall color theme.
-   * 
+   *
    * _should be enum member of ColorTheme_
    */
   themeConfig: ColorTheme;
+
+  /**
+   * ### Children node
+   *
+   * Children node of ColoThemeProvider
+   */
+  children: React.ReactElement;
 }
 
 /**
