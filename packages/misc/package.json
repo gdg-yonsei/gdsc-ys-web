@@ -2,7 +2,7 @@
   "name": "@gdsc-yonsei/misc",
   "description": "Miscellaneous tools for GDSC Yonsei & other chapters",
   "version": "0.0.19",
-  "packageManager": "yarn@3.6.3",
+  "packageManager": "yarn@4.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "UNLICENSED",
