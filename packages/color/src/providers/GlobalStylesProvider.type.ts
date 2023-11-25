@@ -18,5 +18,5 @@ export interface GlobalStylesProviderProps {
    *
    * Children node of ColoThemeProvider
    */
-  children: React.ReactElement;
+  children: React.ReactNode;
 }
