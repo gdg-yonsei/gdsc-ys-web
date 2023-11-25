@@ -11,7 +11,7 @@ export interface GlobalStylesProviderProps {
    *
    * This prop should be enum member of ColorTheme preset
    */
-  theme: ColorTheme;
+  theme?: ColorTheme;
 
   /**
    * ### Children node

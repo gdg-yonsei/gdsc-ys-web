@@ -11,7 +11,7 @@ export interface ColorThemeProviderProps {
    *
    * _should be enum member of ColorTheme_
    */
-  themeConfig: ColorTheme;
+  themeConfig?: ColorTheme;
 
   /**
    * ### Children node
