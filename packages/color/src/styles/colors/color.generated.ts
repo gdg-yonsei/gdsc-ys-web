@@ -25,7 +25,48 @@ export const color = {
         a6: content.gray.a6.blue,
         a7: content.gray.a7.blue,
       },
-      tintColor: content.tintColor.blue,
+      tintColor: {
+        magenta: {
+          a1: content.tintColor.magenta.a1.blue,
+          a2: content.tintColor.magenta.a2.blue,
+          a3: content.tintColor.magenta.a3.blue,
+        },
+        cyan: {
+          a1: content.tintColor.cyan.a1.blue,
+          a2: content.tintColor.cyan.a2.blue,
+          a3: content.tintColor.cyan.a3.blue,
+        },
+        orange: {
+          a1: content.tintColor.orange.a1.blue,
+          a2: content.tintColor.orange.a2.blue,
+          a3: content.tintColor.orange.a3.blue,
+        },
+        purple: {
+          a1: content.tintColor.purple.a1.blue,
+          a2: content.tintColor.purple.a2.blue,
+          a3: content.tintColor.purple.a3.blue,
+        },
+        blue: {
+          a1: content.tintColor.blue.a1.blue,
+          a2: content.tintColor.blue.a2.blue,
+          a3: content.tintColor.blue.a3.blue,
+        },
+        red: {
+          a1: content.tintColor.red.a1.blue,
+          a2: content.tintColor.red.a2.blue,
+          a3: content.tintColor.red.a3.blue,
+        },
+        yellow: {
+          a1: content.tintColor.yellow.a1.blue,
+          a2: content.tintColor.yellow.a2.blue,
+          a3: content.tintColor.yellow.a3.blue,
+        },
+        green: {
+          a1: content.tintColor.green.a1.blue,
+          a2: content.tintColor.green.a2.blue,
+          a3: content.tintColor.green.a3.blue,
+        },
+      },
     },
     background: {
       common: {
@@ -198,7 +239,48 @@ export const color = {
         a6: content.gray.a6.green,
         a7: content.gray.a7.green,
       },
-      tintColor: content.tintColor.green,
+      tintColor: {
+        magenta: {
+          a1: content.tintColor.magenta.a1.green,
+          a2: content.tintColor.magenta.a2.green,
+          a3: content.tintColor.magenta.a3.green,
+        },
+        cyan: {
+          a1: content.tintColor.cyan.a1.green,
+          a2: content.tintColor.cyan.a2.green,
+          a3: content.tintColor.cyan.a3.green,
+        },
+        orange: {
+          a1: content.tintColor.orange.a1.green,
+          a2: content.tintColor.orange.a2.green,
+          a3: content.tintColor.orange.a3.green,
+        },
+        purple: {
+          a1: content.tintColor.purple.a1.green,
+          a2: content.tintColor.purple.a2.green,
+          a3: content.tintColor.purple.a3.green,
+        },
+        blue: {
+          a1: content.tintColor.blue.a1.green,
+          a2: content.tintColor.blue.a2.green,
+          a3: content.tintColor.blue.a3.green,
+        },
+        red: {
+          a1: content.tintColor.red.a1.green,
+          a2: content.tintColor.red.a2.green,
+          a3: content.tintColor.red.a3.green,
+        },
+        yellow: {
+          a1: content.tintColor.yellow.a1.green,
+          a2: content.tintColor.yellow.a2.green,
+          a3: content.tintColor.yellow.a3.green,
+        },
+        green: {
+          a1: content.tintColor.green.a1.green,
+          a2: content.tintColor.green.a2.green,
+          a3: content.tintColor.green.a3.green,
+        },
+      },
     },
     background: {
       common: {
@@ -377,7 +459,48 @@ export const color = {
         a6: content.gray.a6.yellow,
         a7: content.gray.a7.yellow,
       },
-      tintColor: content.tintColor.yellow,
+      tintColor: {
+        magenta: {
+          a1: content.tintColor.magenta.a1.yellow,
+          a2: content.tintColor.magenta.a2.yellow,
+          a3: content.tintColor.magenta.a3.yellow,
+        },
+        cyan: {
+          a1: content.tintColor.cyan.a1.yellow,
+          a2: content.tintColor.cyan.a2.yellow,
+          a3: content.tintColor.cyan.a3.yellow,
+        },
+        orange: {
+          a1: content.tintColor.orange.a1.yellow,
+          a2: content.tintColor.orange.a2.yellow,
+          a3: content.tintColor.orange.a3.yellow,
+        },
+        purple: {
+          a1: content.tintColor.purple.a1.yellow,
+          a2: content.tintColor.purple.a2.yellow,
+          a3: content.tintColor.purple.a3.yellow,
+        },
+        blue: {
+          a1: content.tintColor.blue.a1.yellow,
+          a2: content.tintColor.blue.a2.yellow,
+          a3: content.tintColor.blue.a3.yellow,
+        },
+        red: {
+          a1: content.tintColor.red.a1.yellow,
+          a2: content.tintColor.red.a2.yellow,
+          a3: content.tintColor.red.a3.yellow,
+        },
+        yellow: {
+          a1: content.tintColor.yellow.a1.yellow,
+          a2: content.tintColor.yellow.a2.yellow,
+          a3: content.tintColor.yellow.a3.yellow,
+        },
+        green: {
+          a1: content.tintColor.green.a1.yellow,
+          a2: content.tintColor.green.a2.yellow,
+          a3: content.tintColor.green.a3.yellow,
+        },
+      },
     },
     background: {
       common: {
@@ -559,7 +682,44 @@ export const color = {
         a6: content.gray.a6.red,
         a7: content.gray.a7.red,
       },
-      tintColor: content.tintColor.red,
+      tintColor: {
+        magenta: {
+          a1: content.tintColor.magenta.a1.red,
+          a2: content.tintColor.magenta.a2.red,
+          a3: content.tintColor.magenta.a3.red,
+        },
+        cyan: {
+          a1: content.tintColor.cyan.a1.red,
+          a2: content.tintColor.cyan.a2.red,
+          a3: content.tintColor.cyan.a3.red,
+        },
+        orange: {
+          a1: content.tintColor.orange.a1.red,
+          a2: content.tintColor.orange.a2.red,
+          a3: content.tintColor.orange.a3.red,
+        },
+        purple: {
+          a1: content.tintColor.purple.a1.red,
+          a2: content.tintColor.purple.a2.red,
+          a3: content.tintColor.purple.a3.red,
+        },
+        blue: {
+          a1: content.tintColor.blue.a1.red,
+          a2: content.tintColor.blue.a2.red,
+          a3: content.tintColor.blue.a3.red,
+        },
+        red: { a1: content.tintColor.red.a1.red, a2: content.tintColor.red.a2.red, a3: content.tintColor.red.a3.red },
+        yellow: {
+          a1: content.tintColor.yellow.a1.red,
+          a2: content.tintColor.yellow.a2.red,
+          a3: content.tintColor.yellow.a3.red,
+        },
+        green: {
+          a1: content.tintColor.green.a1.red,
+          a2: content.tintColor.green.a2.red,
+          a3: content.tintColor.green.a3.red,
+        },
+      },
     },
     background: {
       common: {

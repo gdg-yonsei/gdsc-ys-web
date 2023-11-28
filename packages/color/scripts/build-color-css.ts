@@ -1,11 +1,10 @@
-import { writeFileSync } from "fs";
-import path from "path";
+import { writeFileSync } from 'fs';
+import path from 'path';
 
-import { prettify, injectComment } from "@gdsc-yonsei/misc";
+import { prettify, injectComment } from '@gdsc-yonsei/misc';
 import tools, { type RecursiveObject } from 'wonderful-tools';
 
-
-import { __Internal__colors } from "../src/constants";
+import { __Internal__colors } from '../src/constants';
 
 /**
  * Build output file name
@@ -23,8 +22,8 @@ const PROP_PREFIX = '-';
 
 /** Type definitions */
 type ColorPresetName = keyof typeof __Internal__colors;
-type ColorPreset = RecursiveObject<{ blue: string; green: string; red: string; yellow: string} | string>;
-type ColorPresetGroup = { [key in ColorPresetName ]: ColorPreset};
+type ColorPreset = RecursiveObject<{ blue: string; green: string; red: string; yellow: string } | string>;
+type ColorPresetGroup = { [key in ColorPresetName]: ColorPreset };
 type SingleColorPreset = Exclude<RecursiveObject<string>, string>;
 
 /**
@@ -47,16 +46,25 @@ async function main() {
   const colorRed = getColorCode(colorPreset, 'red');
   const colorRedRGB = getRGBColorCode(colorPreset, 'red');
 
-  const code = await generateCSSFile(colorBlue, colorBlueRGB, colorGreen, colorGreenRGB, colorYellow, colorYellowRGB, colorRed, colorRedRGB);
+  const code = await generateCSSFile(
+    colorBlue,
+    colorBlueRGB,
+    colorGreen,
+    colorGreenRGB,
+    colorYellow,
+    colorYellowRGB,
+    colorRed,
+    colorRedRGB
+  );
 
   writeFileSync(TARGET_FILE_DIR, code);
 }
 
 /**
  * ### getColorPreset function
- * 
+ *
  * loads matched color with given color type
- * 
+ *
  * @param colorPresetNameList Color preset names array
  * @returns Color preset group
  */
@@ -66,13 +74,13 @@ function getColorPreset(colorPresetNameList: ColorPresetName[]): ColorPresetGrou
       ...prev,
       [colorTypeName]: __Internal__colors[colorTypeName],
     }),
-    {} as ColorPresetGroup,
+    {} as ColorPresetGroup
   );
 }
 
 /**
  * Generate CSS Variables from given mode
- * 
+ *
  * @param colorPreset ColorPreset
  * @param mode theme
  * @returns CSS variables
@@ -84,7 +92,7 @@ function getColorCode(colorPreset: ColorPreset, mode: 'blue' | 'green' | 'yellow
 
 /**
  * Generate CSS Variables from given mode as RGB format
- * 
+ *
  * @param colorPreset ColorPreset
  * @param mode theme
  * @returns CSS variables as RGB
@@ -96,7 +104,7 @@ function getRGBColorCode(colorPreset: ColorPreset, mode: 'blue' | 'green' | 'yel
 
 /**
  * Flatten colorPreset to CSS variable form.
- * 
+ *
  * @param colorPreset ColorPreset
  * @param prefix prefix
  * @returns CSS Variables
@@ -119,17 +127,23 @@ function flattenColorPreset(colorPreset: RecursiveObject<string>, prefix: string
 
 /**
  * Select color theme from given color preset
- * 
+ *
  * @param colorPreset ColorPreset
  * @param mode theme to select
  * @returns color node
  */
-function getSingleModeColorPreset(colorPreset: ColorPreset, mode: 'blue' | 'green' | 'yellow' | 'red'): SingleColorPreset | string {
+function getSingleModeColorPreset(
+  colorPreset: ColorPreset,
+  mode: 'blue' | 'green' | 'yellow' | 'red'
+): SingleColorPreset | string {
   // if resolved
   if (typeof colorPreset !== 'object') return {};
 
   // if 'mode' key found
-  if (tools.getObjectKeys(colorPreset as Exclude<ColorPreset, string>).includes(mode)) {
+  if (
+    tools.getObjectKeys(colorPreset as Exclude<ColorPreset, string>).includes(mode) &&
+    typeof colorPreset[mode] === 'string'
+  ) {
     return colorPreset[mode];
   }
 
@@ -141,10 +155,9 @@ function getSingleModeColorPreset(colorPreset: ColorPreset, mode: 'blue' | 'gree
   }, {});
 }
 
-
 /**
  * Flatten colorPreset to CSS variable form, and separate R, G, B values from color.
- * 
+ *
  * @param colorPreset ColorPreset
  * @param prefix prefix
  * @returns CSS variables
@@ -159,7 +172,7 @@ function flattenRGBColorPreset(colorPreset: RecursiveObject<string>, prefix?: st
       list =
         list +
         `${prefix + PROP_PREFIX + tools.formatKebab(key) + PROP_PREFIX + 'rgb'}: ${extractRGB(
-          colorPreset[key] as string,
+          colorPreset[key] as string
         )};\n\t\t\t`;
     }
 
@@ -182,7 +195,7 @@ function extractRGB(color: string) {
 
 /**
  * ### generates CSS Provider code according to processed color strings
- * 
+ *
  * @param blueColor blue color string
  * @param blueRGBColor blue color RGB string
  * @param greenColor green color string
@@ -201,7 +214,7 @@ async function generateCSSFile(
   yellowColor: string,
   yellowRGBColor: string,
   redColor: string,
-  redRGBColor: string,
+  redRGBColor: string
 ) {
   const prettifiedCode = await prettify(
     `
